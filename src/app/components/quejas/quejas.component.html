@@ -1,0 +1,41 @@
+<div class="contenedor">
+    <h1>Formulario de quejas</h1>
+    <div class="estilo">
+        <form [formGroup]="formulario">
+            Nombre: <input formControlName="nombre" type="text" placeholder="*nombre" required>
+
+            <form name="formulario1" action="#">
+                País:<select name="paises" formControlName="pais" required>
+            <option value="1">Argentina
+            <option value="2">Bolivia
+            <option value="3">Brasil
+            <option value="4">Chile
+            <option value="5">Colombia
+            <option value="6">Costa Rica
+            <option value="7">Cuba
+            <option value="8">Ecuador
+            <option value="9">El salvador
+            <option value="10">Guatemala
+            <option value="11">Haití
+            <option value="12">Honduras
+            <option value="13">Jamaica
+            <option value="14">México
+            <option value="15">Nicaragua
+            <option value="16">Paraguay
+            <option value="17">Panamá
+            <option value="18">Perú
+            <option value="19">Puerto Rico
+            <option value="20">Republica Dominicana
+            <option value="21">Uruguay
+            <option value="22">Venezuela
+            <option vulue="23">Otro
+        </select>
+            </form>
+
+            <br> Descripción: <input formControlName="descripcion" type="text" placeholder="*describa su queja" required><br>
+
+            <button [disabled]="!formulario.valid" type="submit" (click)="guardar()">Enviar</button>
+        </form>
+    </div>
+
+</div>

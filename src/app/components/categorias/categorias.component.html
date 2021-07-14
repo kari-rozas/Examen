@@ -1,0 +1,10 @@
+<ul id='productos'>
+    <li *ngFor="let item of lista">
+        <mat-card class="example card">
+            <h1 class="nombre">{{item.nombre}}</h1>
+            <img src="/assets/{{item.imagen}}" class="imagenes">
+            <p class='autor'>Autor: {{item.autor}}</p>
+            <p class="cantidad">Páginas: {{item.paginas}}</p>
+        </mat-card>
+    </li>
+</ul>

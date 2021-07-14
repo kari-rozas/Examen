@@ -1,0 +1,14 @@
+<nav>
+    <div id="logo">
+        <h2>Mis libros</h2>
+
+    </div>
+    <div id="menu">
+        <a [routerLink]="['/']" routerLinkActive="router-link-active"><button mat-button><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        <span class="inicio">Inicio</span></button></a>
+        <a [routerLink]="['/categorias']" routerLinkActive="router-link-active"><button mat-button [matMenuTriggerFor]="belowMenu" class="bi bi-book-half"><span class="inicio">Libros</span></button></a>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+        </mat-menu>
+        <a [routerLink]="['/quejas']" routerLinkActive="router-link-active"><button mat-button [matMenuTriggerFor]="belowMenu" class="bi bi-journal-x"><span class="inicio">Quejas</span></button></a>
+    </div>
+</nav>

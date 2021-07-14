@@ -1,0 +1,26 @@
+ul#productos {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.imagenes {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.nombre {
+    color: palevioletred;
+}
+
+.autor {
+    color: palevioletred;
+}
+
+.cantidad {
+    color: palevioletred;
+}
